@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alura Sprint #2 - Ahorcado</title>
+</head>
+<body>
+    <img src="img/logo.png" alt="logo alura">
+
+    <div class="contenedor" id="cont">
+        <h1 id="titulo">AHORCADO</h1>
+        <div class="contInputs">
+            <a href="juego.html" type="button" value="Iniciar" class="inicio">INICIAR</a>
+            <button value="agregar" onclick="agregarPalabra()" class="botonAgregar">NUEVA PALABRA</button>
+        </div>
+        <div id="inputP">
+            <input type="text" id="texto" placeholder="Palabra" onkeypress="return soloLetras(event);" required>
+            <input id="botonAgregar" type="button" onclick="agregarPal()" value="Guardar Palabra">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
