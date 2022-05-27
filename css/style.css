@@ -1,0 +1,171 @@
+body{
+    background: darkorchid;
+    color: white;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+  
+.contenedor{
+    width: 100%;
+    margin: 0;
+}
+
+.contenedor::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+img{
+    margin-left: 85%;
+}
+
+#titulo{
+    font-weight: 100;
+    margin: 5px 0;
+    font-size: 3em;
+}
+
+.inicio{
+    border-radius: 5px;
+    background: #0000ff;
+    color: #000000;
+    border: solid 5px black;
+    cursor: pointer;
+    width: 180px;
+    padding: 20px 35px;
+    outline: none;
+    text-decoration: none;
+    text-shadow: 2em;
+    font-size: 1em;
+    margin: 20px;
+}
+
+.inicio:hover{
+    transition: all 0.3s ease-in-out;
+    background: #48bcf1;
+    border: solid 2px black;
+}
+
+button,input{
+    border-radius: 5px;
+    background: #0000ff;
+    color: #000000;
+    border: solid 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 20px 35px;
+    width: 180px;
+    margin: 20px;
+    outline: none;
+    text-decoration: none;
+    text-shadow: 2em;
+}
+
+button:hover{
+    transition: all 0.3s ease-in-out;
+    background: #48bcf1;
+    border: solid 2px black;
+}
+
+#inputP{
+  display: none;  
+}
+
+input:hover{
+    transition: all 0.3s ease-in-out;
+    background: #48bcf1;
+    border: solid 2px black;
+    color: white;
+}
+
+canvas{
+    color: white;
+    border: white solid 3px;
+    padding: 20px;
+    background-color: rgb(83, 90, 79);
+}
+
+#intentos{
+    font-size: 2em;
+    text-align: center;
+}
+
+#letras{
+    padding: 0;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+#letras:after{
+    content: 5px;
+    display: table;
+    clear: both;
+}
+
+#letras li:hover{
+    background: #11998e;
+    border:  solid 2px white;
+    color: white;
+}
+
+#letras li{
+    float:left;
+    font-size: 20px;
+    line-height: 20px;
+    border: solid 2px black;
+    background: #48bcf1;
+    margin: 10px 10px 0;
+    list-style: none;
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+#palabra-ad{
+    margin: 0;
+    padding: 0%;
+    display: block;
+}
+
+#palabra-ad li{
+    list-style: none;
+    margin: 0%;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+
+button:hover{
+    transition: all 0.3s ease-in-out;
+    background: rgb(55, 143, 143);
+    border: solid 2px #fff;
+    color: #fff;
+}
+
+.active{
+    opacity: 0.3;
+    cursor: default;
+}
+
+#titulo{
+   margin-bottom: 10%;
+   padding: 2%;
+}
+
+#estadisticas{
+    align-content: center;
+    display: inline;
+    font-size: 1em;
+}
